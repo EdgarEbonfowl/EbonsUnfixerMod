@@ -1,4 +1,4 @@
-# Ebon's Content Mod
+# Ebon's Unfixer Mod
 If you're like me and you have been playing Wrath of the Righteous for a couple years off-and-on and each time you return to the game you find out Owlcat "fixed" a feature that you built around and now your characters are markedly worse, this mod is for you. The intent of this mod is merely to revert/unfix some of the fixes that Owlcat implemented since launch which haven't been reverted elsewhere. This requires [TabletopTweaks-Core](https://github.com/Vek17/TabletopTweaks-Core "TabletopTweaks-Core").
 
 ## The Unfixes
