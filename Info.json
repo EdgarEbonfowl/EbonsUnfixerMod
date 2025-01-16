@@ -1,0 +1,12 @@
+﻿{
+  "Id": "EbonsUnfixerMod",
+  "DisplayName": "EbonsUnfixerMod",
+  "Author": "",
+  "Version": "1.0.0",
+  "ManagerVersion": "0.27.11",
+  "Requirements": [],
+  "AssemblyName": "EbonsUnfixerMod.dll",
+  "EntryMethod": "EbonsUnfixerMod.Main.Load",
+  "HomePage": "",
+  "Repository": ""
+}
