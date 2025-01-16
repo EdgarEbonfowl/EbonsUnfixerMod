@@ -54,7 +54,7 @@ namespace EbonsUnfixerMod.Feats
 {
     internal class ShatterDefenses
     {
-    
+
         internal static void Configure()
         {
             // Here we apply the flat-footed buff BEFORE the attack if the target is shaken/frightened
@@ -116,6 +116,6 @@ namespace EbonsUnfixerMod.Feats
                 })
                 .Configure();
         }
-    
+
     }
 }

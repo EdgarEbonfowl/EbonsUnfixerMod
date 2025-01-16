@@ -739,11 +739,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\WrathMods\\EbonsRevertsMod\\EbonsRevertsMod\\EbonsUnfixerMod.csproj",
+      "projectUniqueName": "D:\\WrathMods\\EbonsUnfixerMod\\EbonsUnfixerMod\\EbonsUnfixerMod.csproj",
       "projectName": "EbonsUnfixerMod",
-      "projectPath": "D:\\WrathMods\\EbonsRevertsMod\\EbonsRevertsMod\\EbonsUnfixerMod.csproj",
+      "projectPath": "D:\\WrathMods\\EbonsUnfixerMod\\EbonsUnfixerMod\\EbonsUnfixerMod.csproj",
       "packagesPath": "C:\\Users\\Anthony Campitelli\\.nuget\\packages\\",
-      "outputPath": "D:\\WrathMods\\EbonsRevertsMod\\EbonsRevertsMod\\obj\\",
+      "outputPath": "D:\\WrathMods\\EbonsUnfixerMod\\EbonsUnfixerMod\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Anthony Campitelli\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a8z1aQtkQEo=",
+  "dgSpecHash": "F7xVxnAr+QA=",
   "success": true,
-  "projectFilePath": "D:\\WrathMods\\EbonsRevertsMod\\EbonsRevertsMod\\EbonsUnfixerMod.csproj",
+  "projectFilePath": "D:\\WrathMods\\EbonsUnfixerMod\\EbonsUnfixerMod\\EbonsUnfixerMod.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Anthony Campitelli\\.nuget\\packages\\bepinex.assemblypublicizer.msbuild\\0.4.2\\bepinex.assemblypublicizer.msbuild.0.4.2.nupkg.sha512",
     "C:\\Users\\Anthony Campitelli\\.nuget\\packages\\ilrepack.msbuild.task\\2.0.13\\ilrepack.msbuild.task.2.0.13.nupkg.sha512",
