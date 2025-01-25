@@ -11,6 +11,7 @@ using Kingmaker.Blueprints.JsonSystem;
 using EbonsUnfixerMod.Equipment;
 using EbonsUnfixerMod.Feats;
 using BlueprintCore.Blueprints.Configurators.Root;
+using EbonsUnfixerMod.Rules;
 
 namespace EbonsUnfixerMod;
 
@@ -60,6 +61,7 @@ public static class Main {
                 
                 BaneOfSpirit.Configure();
                 ShatterDefenses.Configure();
+                CriticalRangeRevert.Configure();
             } catch (Exception e) {
                 log.Log(string.Concat("Failed to initialize.", e));
             }

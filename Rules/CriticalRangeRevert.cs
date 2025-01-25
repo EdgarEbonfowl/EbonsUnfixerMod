@@ -25,19 +25,33 @@ using Kingmaker.UnitLogic.Mechanics;
 using Kingmaker.UnitLogic.Parts;
 using Kingmaker.Blueprints;
 using Kingmaker.UnitLogic.Class.Kineticist;
+using BlueprintCore.Blueprints.Configurators.Items.Equipment;
+using BlueprintCore.Blueprints.References;
+using BlueprintCore.Blueprints.Configurators.Items.Ecnchantments;
+using BlueprintCore.Blueprints.CustomConfigurators.Classes;
+using Kingmaker.UnitLogic.FactLogic;
 
 namespace EbonsUnfixerMod.Rules
 {
     internal class CriticalRangeRevert
     {
+        internal static void Configure()
+        {
+            FeatureConfigurator.For(FeatureRefs.BeltOfPerfection8ExtraFeature)
+                .RemoveComponents(c => c is AddFacts)
+                .AddWeaponCriticalEdgeIncreaseStackable(value: 1)
+                .Configure();
+        }
+        
         [HarmonyPatch(typeof(RuleCalculateWeaponStats))]
+        [HarmonyPriority(Priority.VeryHigh)]
         internal class Player_GetCriticalRange_Patch
         {
             [HarmonyPatch(nameof(RuleCalculateWeaponStats.CriticalRange), MethodType.Getter)]
             [HarmonyPostfix]
             public static void Postfix(RuleCalculateWeaponStats __instance, ref int __result)
             {
-                __result = (21 - __instance.Weapon.Blueprint.CriticalRollEdge + __instance.CriticalEdgeBonus) * (__instance.DoubleCriticalEdge ? 2 : 1);
+                if (__instance.DoubleCriticalEdge) __result += (__result - ((21 - __instance.Weapon.Blueprint.CriticalRollEdge) * (__instance.DoubleCriticalEdge ? 2 : 1)));
             }
         }
     }
