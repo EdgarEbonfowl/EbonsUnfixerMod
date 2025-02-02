@@ -100,6 +100,9 @@ namespace EbonsUnfixerMod.Feats
 
             FeatureConfigurator.For(FeatureRefs.ShatterDefenses)
                 .RemoveComponents(c => c is AddInitiatorAttackWithWeaponTrigger)
+                .Configure();
+
+            FeatureConfigurator.For(FeatureRefs.ShatterDefenses)
                 .AddComponent<AddInitiatorAttackWithWeaponTrigger>(c =>
                 {
                     c.TriggerBeforeAttack = true;
@@ -114,7 +117,7 @@ namespace EbonsUnfixerMod.Feats
                     c.RangeType = WeaponRangeType.Melee;
                     c.Action = actions2;
                 })
-                .Configure();
+                .Configure(delayed: true);
         }
 
     }

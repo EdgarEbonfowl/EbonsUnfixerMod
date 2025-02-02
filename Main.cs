@@ -12,6 +12,7 @@ using EbonsUnfixerMod.Equipment;
 using EbonsUnfixerMod.Feats;
 using BlueprintCore.Blueprints.Configurators.Root;
 using EbonsUnfixerMod.Rules;
+using EbonsUnfixerMod.Spells;
 
 namespace EbonsUnfixerMod;
 
@@ -62,6 +63,9 @@ public static class Main {
                 BaneOfSpirit.Configure();
                 ShatterDefenses.Configure();
                 CriticalRangeRevert.Configure();
+                WideSweep.Configure();
+                Repurpose.Configure();
+
             } catch (Exception e) {
                 log.Log(string.Concat("Failed to initialize.", e));
             }
